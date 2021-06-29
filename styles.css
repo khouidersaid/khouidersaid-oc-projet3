@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+.resto1, .resto2, .resto3, .resto4 {
+    width: 100%;
+    margin-left: 0;
+}
+@media screen and (max-width: 766px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        border: solid;
+        justify-content: center;
+    }
+    h1 {
+        width: auto;
+        justify-content: center;
+        margin: 0 25% 0 25% ;
+        border: solid;
+    }
+    .gps {
+        border: solid;
+        width: auto;
+        min-height: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        display: flex;
+    }
+    .tete {
+      
+        background-color: gray;
+    }
+    .bloc-tete {
+        background-color: gray;
+        flex-wrap: wrap;
+        margin-left: 15%;
+        width: 70%;
+    }
+    .fonctions {
+        margin-bottom: 20px;
+    }
+    .fonctions h3 {
+        width: 80%;
+        margin-left: 8%;
+    }
+    .fonction1, .fonction2, .fonction3 {
+        width: 80%;
+        height: 70px;
+        margin-left: 10%;
+        padding-top: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        border-radius: 10px 10px 10px 10px; 
+        background-color: #f2f2f2;
+    }
+    .fonction1 p, .fonction2 p, .fonction3 p {
+        padding-left: 40px;
+        height: 70px;
+    }
+    .localisation {
+        border: solid;
+        align-items: center;
+    }
+    .resto h3 {
+        background-color: red;
+        height: 50px;
+        padding-left: 1%;
+        margin: 0 0 0 0;
+    }
+    .resto {
+        height: 50px;
+        background-color: red;
+        margin-bottom: -20px;
+        padding-top: 20px;
+    }
+    .menu {
+        width: auto;
+        margin: auto;
+        padding-bottom: 20px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: red;
+    }
+    .resto1, .resto2, .resto3, .resto4 {
+        width: 98%; 
+        height: 25%;
+        margin: auto;
+        border: solid red 1px;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .resto1 img, .resto2 img, .resto3 img, .resto4 img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    } 
+    .identification {
+        
+        height: 80px;
+        margin-top: -5px;
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        
+    }
+    .bloc-fin {
+        width:auto;
+        background-color: gray;
+    }
+}
