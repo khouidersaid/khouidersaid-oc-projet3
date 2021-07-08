@@ -14,8 +14,10 @@ body {
         padding: 0;
     }
     .logo {
-        border: solid;
-        justify-content: center;
+    border: solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
     }
     h1 {
         width: auto;
@@ -61,7 +63,6 @@ body {
         margin-left: 8%;
     }
     .fonction1, .fonction2, .fonction3 {
-        border: solid;
         width: 80%;
         height: 70px;
         margin-left: 10%;
@@ -73,16 +74,30 @@ body {
         align-items: center;
     }
     .fonction1 p, .fonction2 p, .fonction3 p {
-        padding-left: 40px;
-        padding-top: 45px;
-        height: 70px;
-        justify-content: center;
-    }
-    .fonction1 p1 {
         border: solid;
+        display: flex;
+        margin-left: auto;
     }
-    .fonction1 i {
+    .fonction1 p1, .fonction2 p2, .fonction3 p3 {
+        border: solid;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -12px;
+        background-color: pink;
+    }
+    .fonction1 i, .fonction2 i, .fonction3 i {
         position: absolute;
+        border: solid;
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .localisation {
         border: solid;
@@ -116,6 +131,10 @@ body {
         margin-top: 20px;
         cursor: pointer;
     }
+    .coeur1, .coeur2, .coeur3, .coeur4 {
+        margin-top: -25px;
+        margin-right: 10px;
+    }
     .rose {
         position: absolute;
         opacity: 0;
@@ -139,16 +158,43 @@ body {
         background-color: white;
         border-radius: 0 0 10px 10px;
         padding-left: 10px;
-        padding-top: 5px;
+        /* padding-top: 5px; */
         display: flex;
-        
+        justify-content: space-between;
+        align-items: center;
     }
     .bloc-fin {
         width:auto;
         background-color: black;
-        
         color: #ffffff;
-       
         padding-left: 10px;
+    }
+    .proposition {
+        display: flex;
+        align-items: center;
+    }
+    .proposition p {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .proposition i {
+        background-color: red;
+        width: auto;
+        height: auto;
+        color: white;
+    }
+    .partner {
+        display: flex;
+        align-items: center;
+    }
+    .partner p {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .partner i {
+        background-color: red;
+        width: auto;
+        height: auto;
+        color: white;
     }
 }
