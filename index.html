@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE --!>
 <html lang="fr">
     <head>
     <title>projet3</title>
@@ -8,6 +8,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  rel="stylesheet"> 
     </head>
     <body>
+        <section class="spiner">
+            <span class="loader loader-quart"></span>
+            chargement...
+        </section>
         <header>
         <div class="logo">
             <img src="./images/ohmyfood.png" alt="logo-resto" width="50%">
@@ -16,16 +20,17 @@
         <div class="tete">
             <div class="gps">
             <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
+            <input type="text" name="geo">
             </div>
-        <div class="bloc-tete">
-            <div class="titre">
-                <h2>Réservez le menu qui vous convient</h2>
+            <div class="bloc-tete">
+                <div class="titre">
+                    <h2>Réservez le menu qui vous convient</h2>
+                </div>
+                <div class="sous-titre">
+                    <p>decouvrez des restaurants d'exception sélectionnés par nos soins</p>
+                </div>
+                <button class="boutton">explorer nos restaurants</button>
             </div>
-            <div class="sous-titre">
-                <p>decouvrez des restaurants d'exception sélectionnés par nos soins</p>
-            </div>
-            <button class="boutton">explorer nos restaurants</button>
-        </div>
         </div>
         </header>
     <!--section 1 fonctionnement--> 
@@ -34,7 +39,7 @@
         <h3>Fonctionnement</h3>
         <div class="fonction1">
         <p1>1</p1>
-        <i class="fas fa-mobile-android-alt"></i>
+        <i class="fas fa-mobile-alt"></i>
         <p>Choisissez un restaurant</p>
         </div>
         <div class="fonction2">
@@ -44,7 +49,7 @@
         </div>
         <div class="fonction3">
         <p3>3</p3>
-        <i class="fas fa-home-lg-alt"></i>
+        <i class="fas fa-house-user"></i>
         <p>Dègustez au restaurant</p>
         </div>
     </div>
@@ -52,7 +57,7 @@
     <!--section 2 Restaurants-->
     <section2>
     <div class="resto">
-        <h3>restaurants</h3>
+        <h3>Restaurants</h3>
     </div>
     <div class="menu">
         <figure class="resto1">
@@ -66,7 +71,7 @@
                     <div class="rose"><i class="fas fa-heart"></i></div>
                     <div class="vide"><i class="far fa-heart"></i></div>  
                 </div>
-            </figcaption>
+            </figcaption>   
         </figure>
         <figure class="resto2">
             <img src="./images/resto2.jpg" alt="plat2" width="200px" height="150px">
@@ -112,20 +117,22 @@
         </figure>
     </div>
     </section2>
-    <footer>
-        <div class="bloc-fin">
-        <h4>ohmyfood</h4>
-        <div class="proposition">
-            <i class="fal fa-utensils"></i>
-           <p> Proposer un restaurant</p>
-        </div>
-        <div class="partner">
-            <i class="fal fa-hands-helping"></i>
-            <p>Devenir partenaire</p>
-        </div>
-        <p>Mentions légales</p>
-        <a href="contact">Contact</a>
-        </div>
-    </footer>
+        <footer>
+            <div class="bloc-fin">
+                <h4>ohmyfood</h4>
+                <div class="proposition">
+                    <i class="fas fa-utensils"></i>
+                   <p> Proposer un restaurant</p>
+                </div>
+                <div class="partner">
+                    <i class="fas fa-hands-helping"></i>
+                     <p>Devenir partenaire</p>
+                </div>
+                <div class="mention">
+                <p>Mentions légales</p>
+                </div>
+                <a href="contact">Contact</a>
+            </div>
+        </footer>
     </body>
 </html>

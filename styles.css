@@ -1,23 +1,257 @@
-body {
+body{
     width: 100%;
     margin: auto;
     padding: 0;
 }
-.resto1, .resto2, .resto3, .resto4 {
+.spiner {
+    background-color: red;
+    position: fixed;
+    height: 100%;
     width: 100%;
-    margin-left: 0;
+    line-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: accueil 3s ease-in-out forwards;
+    z-index: 200;
+    opacity: 1;
 }
-@media screen and (max-width: 766px) {
+@keyframes accueil{
+0%{opacity: 1;}
+50%{opacity: 0.5;}
+75%{opacity: 0.3;}
+100%{opacity: 0;}
+}
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.loader-quart {
+    border-radius: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.4);
+}
+.loader-quart:after {
+    content:'';
+    position: absolute;
+    top: -6px; left: -6px; bottom: -6px; right: -6px;
+    border: 6px solid transparent;
+    border-top-color: #fff;
+    border-radius: 50px;
+    animation: spin linear 3s;
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}   
+.gps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    height: 40px;
+    margin-top: 10px;
+}
+.localisation {
+    margin-right: 20px;
+}
+input {
+    background-color: grey;
+    border: none;
+    box-shadow: 0 0 8px black;
+    width: 250px;
+    height: 20px;
+}
+.titre {
+    width: 100%;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+}
+.sous-titre {
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+}
+.boutton {
+    width: 20%;
+    height: 50px;
+    margin-left: 40%;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: blueviolet;
+    opacity: 0.8;
+    box-shadow:0 0 4px black;
+}
+.boutton:hover {
+    background-color: blueviolet;
+    box-shadow: 0 0 8px black;
+    opacity: 1;
+
+}
+.fonctions {
+    border: solid;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: grey;
+}
+.fonctions h3 {
+    border: solid;
+    font-size: 30px;
+}
+.fonction1, .fonction2, .fonction3{
+    width: 20%;
+    height: 70px;
+    margin-left: 10%;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px; 
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+}
+.fonction1 p1, .fonction2 p2, .fonction3 p3 {
+    border: solid;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -12px;
+    background-color: pink;
+}
+.fonction1 i, .fonction2 i, .fonction3 i {
+    width: 30px;
+    height: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resto {
+    width: 95%;
+    height: 50px;
+    border: black solid;
+    margin-left: 2.5%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    width: 95%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+}
+.resto1, .resto2, .resto3, .resto4 {
+    width: 48%; 
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px 0 20px 0;
+    box-shadow: 0px 0px 8px #000000;
+    cursor: pointer;
+}
+.resto1 img, .resto2 img, .resto3 img, .resto4 img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.identification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+}
+.palette, .enchantee, .française, .delice {
+    margin-left: 10px;
+    font-size: 18px;
+}
+.coeur1, .coeur2, .coeur3, .coeur4 {
+    margin-top: -25px;
+    margin-right: 10px;
+}
+.rose {
+    position: absolute;
+    opacity: 0;
+    color: pink;
+}
+.rose:hover {
+    opacity: 1;
+}
+.bloc-fin {
+    width: auto;
+    border: solid;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.bloc-fin h4 {
+    width: 20%;
+    margin-left: 3%;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.proposition {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+}
+.proposition i {
+    margin-right: 10px;
+}
+.partner {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 13%;  
+}
+.partner i {
+    margin-right: 10px;
+}
+.mention {
+    width: 20%;
+    margin-left: 18%;
+    margin-bottom: 15px;
+}
+.bloc-fin a {
+    margin-left: 23%;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+@media screen and (max-width: 766px) 
+{
     body {
         width: 100%;
         margin: 0;
         padding: 0;
     }
     .logo {
-    border: solid;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+        width: 100%;
+        border: solid;
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
     h1 {
         width: auto;
@@ -35,7 +269,6 @@ body {
         display: flex;
     }
     .tete {
-      
         background-color: gray;
     }
     .bloc-tete {
@@ -45,7 +278,6 @@ body {
         width: 70%;
     }
     .boutton {
-        
         width: 80%;
         margin-left: 10%;
         height: 50px;
@@ -57,6 +289,8 @@ body {
     }
     .fonctions {
         margin-bottom: 20px;
+        display: block;
+        width: 100%;
     }
     .fonctions h3 {
         width: 80%;
@@ -74,9 +308,9 @@ body {
         align-items: center;
     }
     .fonction1 p, .fonction2 p, .fonction3 p {
-        border: solid;
         display: flex;
-        margin-left: auto;
+        margin-left: 50px;
+        font-size: 22px;
     }
     .fonction1 p1, .fonction2 p2, .fonction3 p3 {
         border: solid;
@@ -91,7 +325,6 @@ body {
     }
     .fonction1 i, .fonction2 i, .fonction3 i {
         position: absolute;
-        border: solid;
         width: 30px;
         height: 30px;
         margin-left: 20px;
@@ -100,23 +333,19 @@ body {
         align-items: center;
     }
     .localisation {
-        border: solid;
         align-items: center;
     }
     .resto h3 {
-        background-color: red;
-        height: 50px;
-        padding-left: 1%;
-        margin: 0 0 0 0;
+        height: 25px;
     }
     .resto {
-        height: 50px;
-        background-color: red;
-        margin-bottom: -20px;
-        padding-top: 20px;
+        height: 25px;
+        display: flex;
+        font-size: 20px;
+        margin: 0;
     }
     .menu {
-        width: auto;
+        width: 100%;
         margin: auto;
         padding-bottom: 20px;
         border-radius: 0px 0px 10px 10px;
@@ -139,12 +368,10 @@ body {
         position: absolute;
         opacity: 0;
         color: pink;
-
     }
     .rose:hover {
         opacity: 1;
     }
-   
     .resto1 img, .resto2 img, .resto3 img, .resto4 img {
         width: 100%;
         height: 200px;
@@ -158,7 +385,6 @@ body {
         background-color: white;
         border-radius: 0 0 10px 10px;
         padding-left: 10px;
-        /* padding-top: 5px; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -167,7 +393,6 @@ body {
         width:auto;
         background-color: black;
         color: #ffffff;
-        padding-left: 10px;
     }
     .proposition {
         display: flex;
@@ -178,7 +403,6 @@ body {
         font-size: 20px;
     }
     .proposition i {
-        background-color: red;
         width: auto;
         height: auto;
         color: white;
@@ -192,9 +416,61 @@ body {
         font-size: 20px;
     }
     .partner i {
-        background-color: red;
         width: auto;
         height: auto;
         color: white;
     }
+}
+@media screen and (min-width: 766px) and (max-width: 991px)
+{
+    .logo {
+        border: solid;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+     h1 {
+            width: auto;
+            justify-content: center;
+            margin: 0 25% 0 25% ;
+            border: solid;
+        }
+    .gps {
+            border: solid;
+            width: auto;
+            min-height: 40px;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            display: flex;
+        }
+    .tete {
+            background-color: gray;
+        }
+     .bloc-tete {
+            background-color: gray;
+            flex-wrap: wrap;
+            margin-left: 15%;
+            width: 70%;
+        }
+    .boutton {
+            width: 80%;
+            margin-left: 10%;
+            height: 50px;
+            border-radius:  5rem 5rem  5rem 5rem;
+            margin-bottom: 10px;
+            background-color: blueviolet;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    .fonctions {
+            border: solid green;
+            width: auto;
+            display: block;
+            justify-content: space-around;
+        }
+    .fonction1, .fonction2, .fonction3 {
+            width: auto;
+            margin-top: 10px;
+        }
 }
