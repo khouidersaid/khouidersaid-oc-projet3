@@ -1,0 +1,478 @@
+.flex, body .fonctions .service i, body .fonctions .service p, body .bloc-tete .sous-titre, body .bloc-tete .titre, body .gps, body .logo, body .spiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+body .spiner {
+  background-color: red;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: accueil 3s ease-in-out forwards;
+  z-index: 200;
+  opacity: 1;
+}
+@keyframes accueil {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+body .spiner .loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+body .spiner .loader-quart {
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+body .spiner .loader-quart::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border: 6px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50px;
+  animation: spin linear 3s;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .gps {
+  background-color: #808080;
+  height: 40px;
+  margin-top: 10px;
+}
+body .gps .localisation {
+  margin-right: 20px;
+}
+body .gps .localisation p {
+  background-color: #808080;
+  border: none;
+  box-shadow: 0 0 8px #000000;
+  width: 250px;
+  height: 20px;
+}
+body .bloc-tete .titre {
+  width: 100%;
+  font-size: 25px;
+}
+@media screen and (max-width: 599px) {
+  body .bloc-tete .titre {
+    width: 90%;
+    margin: auto;
+    font-size: x-large;
+  }
+}
+body .bloc-tete .sous-titre {
+  width: 100%;
+  font-size: 20px;
+}
+@media screen and (max-width: 599px) {
+  body .bloc-tete .sous-titre {
+    width: 90%;
+    margin: auto;
+    font-size: 22px;
+  }
+}
+body .bloc-tete .boutton {
+  width: 20%;
+  height: 50px;
+  margin-left: 40%;
+  border-radius: 30px 30px 30px 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #8A2BE2;
+  opacity: 0.8;
+  box-shadow: 0 0 4px #000000;
+}
+@media screen and (max-width: 599px) {
+  body .bloc-tete .boutton {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+body .bloc-tete .boutton:hover {
+  background-color: #8A2BE2;
+  box-shadow: 0 0 8px #000000;
+  opacity: 1;
+}
+body .fonctions {
+  border: solid;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #808080;
+}
+@media screen and (max-width: 599px) {
+  body .fonctions {
+    display: block;
+    width: 95%;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .fonctions h3 {
+  font-size: 30px;
+}
+body .fonctions .service {
+  width: 20%;
+  height: 70px;
+  margin-left: 10%;
+  font-size: 20px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 599px) {
+  body .fonctions .service {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+body .fonctions .service:hover {
+  background-color: #8A2BE2;
+  opacity: 1;
+  cursor: pointer;
+}
+body .fonctions .service p {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -12px;
+  background-color: #8A2BE2;
+}
+body .fonctions .service i {
+  width: 30px;
+  height: 30px;
+  color: #000000;
+}
+body .resto {
+  padding-left: 2%;
+}
+body .menu {
+  width: 95%;
+  height: auto;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0;
+}
+@media screen and (max-width: 599px) {
+  body .menu {
+    display: block;
+  }
+}
+body .menu a {
+  text-decoration: none;
+}
+body .menu .restaurant {
+  margin-bottom: 40px;
+  width: 48%;
+  height: 350px;
+  border-radius: 10px 10px 10px 10px;
+  margin: 20px 0 20px 0;
+  box-shadow: 0px 0px 8px #000000;
+  cursor: pointer;
+  object-fit: cover;
+}
+@media screen and (max-width: 599px) {
+  body .menu .restaurant {
+    width: 100%;
+  }
+}
+body .menu .restaurant img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+body .menu .restaurant .identification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+}
+body .menu .restaurant .identification .nom-resto {
+  margin-left: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+body .menu .restaurant .identification .coeur {
+  margin-top: -25px;
+  margin-right: 10px;
+}
+body .menu .restaurant .identification .coeur .rose {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(#ff79da, #8A2BE2);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition-duration: 1.2s;
+}
+body .menu .restaurant .identification .coeur .rose:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+body .logo-menu {
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+body .logo-menu img {
+  width: 50%;
+  margin-left: 15%;
+  margin-top: 80px;
+  object-fit: cover;
+}
+body .logo-menu i {
+  margin-left: 15px;
+}
+body .titre-menu img {
+  width: 100%;
+  height: 350px;
+  margin-top: 80px;
+  object-fit: cover;
+}
+body .titre-menu .cuisine-style {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px 40px 0 0;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+body .rose {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(#ff79da, #8A2BE2);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition-duration: 1.2s;
+}
+body .rose:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+body .menu-prince {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 599px) {
+  body .menu-prince {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+body .menu-prince .contner {
+  width: 100%;
+}
+body .menu-prince .contner .menus {
+  border-radius: 10px 10px 10px 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0px;
+  width: 98%;
+  margin-top: 20px;
+  animation: julie 1s ease-in-out forwards;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px #808080;
+}
+@keyframes julie {
+  from {
+    height: 0;
+  }
+  to {
+    height: 70px;
+  }
+}
+body .menu-prince .contner .menus:hover {
+  transform: scale(90px);
+  opacity: 1;
+}
+body .menu-prince .contner .menus:hover:hover .check {
+  transform: scale(90px);
+  width: 90px;
+  opacity: 1;
+}
+body .menu-prince .contner .menus:hover:hover .check i {
+  transform: rotate(1turn);
+  opacity: 1;
+}
+body .menu-prince .contner .menus .plat {
+  display: block;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .menu-prince .contner .menus .plat .prix {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .menu-prince .contner .menus .plat .prix p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+body .menu-prince .contner .menus .plat .ingridts {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 0 10px 5px 0;
+  padding-left: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .menu-prince .contner .menus .plat .ingridts p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+body .menu-prince .contner .menus .check {
+  height: 70px;
+  width: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+  background-color: aqua;
+  transition: 1s;
+  opacity: 0;
+}
+body .menu-prince .contner .menus .check I {
+  transform: rotate(0);
+  transition-duration: 1s;
+  opacity: 1;
+}
+body .boutton {
+  width: 20%;
+  height: 50px;
+  margin: 20px 40%;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
+  border: none;
+  background-color: #8A2BE2;
+  opacity: 0.8;
+  box-shadow: 0 0 4px #000000;
+}
+@media screen and (max-width: 599px) {
+  body .boutton {
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    margin-top: 20px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    border: none;
+    background-color: blueviolet;
+    opacity: 0.8;
+    box-shadow: 0 0 4px black;
+  }
+}
+body .bloc-fin {
+  width: auto;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 18px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+body .bloc-fin h6 {
+  width: 20%;
+  margin-left: 1%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+body .bloc-fin .proposition {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+}
+@media screen and (max-width: 599px) {
+  body .bloc-fin .proposition {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+}
+body .bloc-fin .partner {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+}
+@media screen and (max-width: 599px) {
+  body .bloc-fin .partner {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+}
+body .bloc-fin .mention {
+  width: 20%;
+  margin-left: 1%;
+}
+@media screen and (max-width: 599px) {
+  body .bloc-fin .mention {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+}
+body .bloc-fin a {
+  width: 20%;
+  margin-left: 1%;
+  text-decoration: none;
+  color: #ffffff;
+}
+body .bloc-fin i {
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

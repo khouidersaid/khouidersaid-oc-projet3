@@ -52,6 +52,194 @@ visibility: hidden;
     display: flex;
     align-items: center;
 }  
+.gps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    height: 40px;
+    margin-top: 10px;
+}
+.localisation {
+    margin-right: 20px;
+}
+input {
+    background-color: grey;
+    border: none;
+    box-shadow: 0 0 8px black;
+    width: 250px;
+    height: 20px;
+}
+.titre {
+    width: 100%;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+}
+.sous-titre {
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+}
+.boutton {
+    width: 20%;
+    height: 50px;
+    margin-left: 40%;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: blueviolet;
+    opacity: 0.8;
+    box-shadow:0 0 4px black;
+}
+.boutton:hover {
+    background-color: blueviolet;
+    box-shadow: 0 0 8px black;
+    opacity: 1;
+}
+.fonctions {
+    border: solid;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: grey;
+}
+.fonctions h3 {
+    font-size: 30px;
+}
+.service {
+    width: 20%;
+    height: 70px;
+    margin-left: 10%;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px; 
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+}
+.service p {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -12px;
+    background-color: pink;
+}
+.service i {
+    width: 30px;
+    height: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resto {
+    width: 95%;
+    height: 50px;
+    border: black solid;
+    margin-left: 2.5%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    width: 95%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+}
+.restaurant {
+    width: 48%; 
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px 0 20px 0;
+    box-shadow: 0px 0px 8px #000000;
+    cursor: pointer;
+}
+.restaurant img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.identification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+}
+.nom-resto {
+    margin-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+} 
+.coeur {
+    margin-top: -25px;
+    margin-right: 10px;
+}
+.rose {
+    position: absolute;
+    opacity: 0;
+    background: linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition-duration: 1.2s
+}
+.rose:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.bloc-fin {
+    width: auto;
+    border: solid;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.bloc-fin h6 {
+    width: 20%;
+    margin-left: 3%;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.proposition {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+}
+.proposition i {
+    margin-right: 10px;
+}
+.partner {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 13%;  
+}
+.partner i {
+    margin-right: 10px;
+}
+.mention {
+    width: 20%;
+    margin-left: 18%;
+    margin-bottom: 15px;
+}
 .logo-menu {
     width: auto;
     height: 50px;
@@ -187,195 +375,6 @@ h2 {
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-.gps {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
-    height: 40px;
-    margin-top: 10px;
-}
-.localisation {
-    margin-right: 20px;
-}
-input {
-    background-color: grey;
-    border: none;
-    box-shadow: 0 0 8px black;
-    width: 250px;
-    height: 20px;
-}
-.titre {
-    width: 100%;
-    font-size: 25px;
-    justify-content: center;
-    display: flex;
-}
-.sous-titre {
-    width: 100%;
-    font-size: 20px;
-    justify-content: center;
-    display: flex;
-}
-.boutton {
-    width: 20%;
-    height: 50px;
-    margin-left: 40%;
-    border-radius: 30px 30px 30px 30px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    border: none;
-    background-color: blueviolet;
-    opacity: 0.8;
-    box-shadow:0 0 4px black;
-}
-.boutton:hover {
-    background-color: blueviolet;
-    box-shadow: 0 0 8px black;
-    opacity: 1;
-
-}
-.fonctions {
-    border: solid;
-    width: 95%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    background-color: grey;
-}
-.fonctions h3 {
-    font-size: 30px;
-}
-.fonction1, .fonction2, .fonction3{
-    width: 20%;
-    height: 70px;
-    margin-left: 10%;
-    font-size: 20px;
-    border-radius: 10px 10px 10px 10px; 
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-}
-.fonction1 p1, .fonction2 p2, .fonction3 p3 {
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -12px;
-    background-color: pink;
-}
-.fonction1 i, .fonction2 i, .fonction3 i {
-    width: 30px;
-    height: 30px;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.resto {
-    width: 95%;
-    height: 50px;
-    border: black solid;
-    margin-left: 2.5%;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-}
-.menu {
-    width: 95%;
-    height: auto;
-    border-radius: 10px 10px 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-    padding: 0;
-}
-.resto1, .resto2, .resto3, .resto4 {
-    width: 48%; 
-    height: auto;
-    border-radius: 10px 10px 10px 10px;
-    margin: 20px 0 20px 0;
-    box-shadow: 0px 0px 8px #000000;
-    cursor: pointer;
-}
-.resto1 img, .resto2 img, .resto3 img, .resto4 img {
-    width: 100%;
-    height: 350px;
-    border-radius: 10px 10px 0 0;
-    object-fit: cover;
-}
-.identification {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 0 0 10px 10px;
-}
-.palette, .enchantee, .française, .delice {
-    margin-left: 10px;
-    font-size: 18px;
-    text-decoration: none;
-}
-a {
-    text-decoration: none;
-} 
-.coeur1, .coeur2, .coeur3, .coeur4 {
-    margin-top: -25px;
-    margin-right: 10px;
-}
-.rose {
-    position: absolute;
-    opacity: 0;
-    background: linear-gradient(#ff79da, #9356dc);
-    -webkit-background-clip: text;
-    color: transparent;
-    transition-duration: 1.2s;
-}
-.rose:hover {
-    opacity: 1;
-    transform: scale(1.2);
-}
-.bloc-fin {
-    width: auto;
-    border: solid;
-    color: #ffffff;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    font-size: 18px;
-    padding-bottom: 20px;
-}
-.bloc-fin h4 {
-    width: 20%;
-    margin-left: 3%;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-.proposition {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    margin-left: 8%;
-}
-.proposition i {
-    margin-right: 10px;
-}
-.partner {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    margin-left: 13%;  
-}
-.partner i {
-    margin-right: 10px;
-}
-.mention {
-    width: 20%;
-    margin-left: 18%;
-    margin-bottom: 15px;
 }
 .bloc-fin a {
     margin-left: 23%;

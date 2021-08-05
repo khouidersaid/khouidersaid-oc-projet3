@@ -3,7 +3,7 @@
     <head>
     <title>projet3</title>
     <meta charset="utf-8">
-    <link href="./styles.css" rel="stylesheet">
+    <link href="./public/css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  rel="stylesheet"> 
     </head>
@@ -13,19 +13,19 @@
             chargement...
        </div>
         <header>
-            <div class="logo">
+            <div class="logo flex">
                 <img src="./images/ohmyfood.png" alt="logo-resto" width="50%">
             </div>
             <div class="tete">
-                <div class="gps">
+                <div class="gps flex">
                 <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
-                <input type="text" name="geo">
+                <p>Paris, belleville</p>
                 </div>
                 <div class="bloc-tete">
-                    <div class="titre">
+                    <div class="titre flex">
                         <h2>Réservez le menu qui vous convient</h2>
                     </div>
-                    <div class="sous-titre">
+                    <div class="sous-titre flex">
                         <p>decouvrez des restaurants d'exception sélectionnés par nos soins</p>
                     </div>
                     <button class="boutton">explorer nos restaurants</button>
@@ -36,20 +36,20 @@
         <section1>
             <div class="fonctions">
                 <h3>Fonctionnement</h3>
-                <div class="fonction1">
-                    <p1>1</p1>
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Choisissez un restaurant</p>
+                <div class="service">
+                    <p flex>1</p>
+                    <i class="fas fa-mobile-alt" flex></i>
+                    <h4>Choisissez un restaurant</h4>
                 </div>
-                <div class="fonction2">
-                    <p2>2</p2>
-                    <i class="fas fa-bars"></i>
-                    <p>Composer votre menu</p>
+                <div class="service">
+                    <p flex>2</p>
+                    <i class="fas fa-bars"flex></i>
+                    <h4>Composer votre menu</h4>
                 </div>
-                <div class="fonction3">
-                    <p3>3</p3>
-                    <i class="fas fa-house-user"></i>
-                    <p>Dègustez au restaurant</p>
+                <div class="service">
+                    <p flex>3</p>
+                    <i class="fas fa-house-user"flex></i>
+                    <h4>Dègustez au restaurant</h4>
                 </div>
             </div>
         </section1>
@@ -59,71 +59,71 @@
                 <h3>Restaurants</h3>
             </div>
             <div class="menu">
-                <figure class="resto1">
+                <figure class="restaurant">
                     <a href="./palette.html">
-                    <img src="./images/resto1.jpg" alt="plat1" width="200px" height="150px">
+                        <img src="./images/resto1.jpg" alt="plat1">
                         <figcaption class="identification">
-                            <div class="palette">
-                                <h4>La palette a du gôut</h4>
+                            <div class="nom-resto">
+                                <h5>La palette a du gôut</h5>
                                 <p>Ménilmontant</p>
                             </div>
-                    </a>
-                            <div class="coeur1">
+                            <div class="coeur">
                                 <div class="rose"><i class="fas fa-heart"></i></div>
                                 <div class="vide"><i class="far fa-heart"></i></div>  
                             </div>
                         </figcaption> 
+                    </a>    
                 </figure>
-                <figure class="resto2">
+                <figure class="restaurant">
                     <a href="./enchantee.html">
-                    <img src="./images/resto2.jpg" alt="plat2" width="200px" height="150px">
+                        <img src="./images/resto3.jpg" alt="plat2">
                         <figcaption class="identification">
-                            <div class="enchantee">
-                                <h4>La notte enchantée</h4>
+                            <div class="nom-resto">
+                                <h5>La notte enchantée</h5>
                                 <p>Charonne</p>
                             </div>
-                    </a>
-                            <div class="coeur2">
+                            <div class="coeur">
                                 <div class="rose"><i class="fas fa-heart"></i></div>
                                 <div class="vide"><i class="far fa-heart"></i></div>
                             </div> 
                         </figcaption>
+                    </a>
                 </figure>
-                <figure class="resto3">
+                <figure class="restaurant">
                     <a href="./française.html">
-                    <img src="./images/resto3.jpg" alt="plat3" width="200px" height="150px">
+                        <img src="./images/resto4.jpg" alt="plat3">
                         <figcaption class="identification">
-                            <div class="française">
-                                <h4>A la française</h4>
+                            <div class="nom-resto">
+                                <h5>A la française</h5>
                                 <p>Cité rouge</p>
                             </div>
-                    </a>
-                            <div class="coeur3">
+                            <div class="coeur">
                                 <div class="rose"><i class="fas fa-heart"></i></div>
                                 <div class="vide"><i class="far fa-heart"></i></div>   
                             </div>
                         </figcaption>
+                    </a>
                 </figure>
-                <figure class="resto4">
+                <figure class="restaurant">
                     <a href="./delice.html">
-                    <img src="./images/resto4.jpg" alt="plat4" width="200px" height="150px">
+                        <img src="./images/resto2.jpg" alt="plat4">
                         <figcaption class="identification">
-                            <div class="delice">
-                                <h4>La délice des sens</h4>
+                            <div class="nom-resto">
+                                <h5>La délice des sens</h5>
                                 <p>Folie-Méricourt</p>
-                            </div>
-                    </a>
-                            <div class="coeur4">
+                            </div>                   
+                            <div class="coeur">
                                 <div class="rose"><i class="fas fa-heart"></i></div>
                                 <div class="vide"><i class="far fa-heart"></i></div>   
                             </div>
                         </figcaption>
+                    </a>
                 </figure>
             </div>
         </section2>
         <footer>
             <div class="bloc-fin">
-                <h4>ohmyfood</h4>
+                <h6>ohmyfood</h6>
                 <div class="proposition">
                     <i class="fas fa-utensils"></i>
                    <p> Proposer un restaurant</p>
@@ -135,9 +135,8 @@
                 <div class="mention">
                 <p>Mentions légales</p>
                 </div>
-                <a href="contact">Contact</a>
+                <a href="mailto:ohmyfood@gmail.com">Contact</a>
             </div>
         </footer>
-        
     </body>
 </html>

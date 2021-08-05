@@ -1,11 +1,15 @@
 <!DOCTYPE >
 <html>
     <head>
-        <link href="./styles.css" rel="stylesheet">
+        <link href="./public/css/style.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="spiner">
+            <span class="loader loader-quart"></span>
+            chargement...
+       </div>
         <header>
             <div class="logo-menu">
                 <a href="index.html"><i class="fas fa-arrow-left"></i></a>
@@ -23,15 +27,8 @@
             </div>
         </header>
         <section class="menu-prince">
-            <h2>ENTREES</h2>
-            <div class="lds">
-                <div class="lds1">
-                    <div class="c1">1</div> 
-                    <div class="c2">2</div> 
-                    <div class="c3">3</div>
-                </div> 
-            </div>
-            <div class="contner">          
+            <div class="contner"> 
+                <h2>ENTREES</h2>         
                 <div class="menus">
                     <div class="plat">
                         <div class="prix">
@@ -69,8 +66,8 @@
                     <div class="check"><i class="fas fa-check-circle"></i></div>
                 </div>
             </div>
-            <h2>PLATS</h2>
-            <div class="contner">          
+            <div class="contner">
+                <h2>PLATS</h2>          
                 <div class="menus">
                     <div class="plat">
                         <div class="prix">
@@ -108,8 +105,9 @@
                     <div class="check"><i class="fas fa-check-circle"></i></div>
                 </div>
             </div>
-            <h2>DESSERTS</h2>
-            <div class="contner">          
+            
+            <div class="contner">
+                <h2>DESSERTS</h2>          
                 <div class="menus">
                     <div class="plat">
                         <div class="prix">
@@ -146,9 +144,9 @@
                     </div>
                     <div class="check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
-            <button class="boutton">Commander</button>
+            </div>   
         </section>
+        <button class="boutton">Commander</button>
         <footer>
             <div class="bloc-fin">
             <h4>ohmyfood</h4>
@@ -161,7 +159,7 @@
                 <p>Devenir partenaire</p>
             </div>
             <p>Mentions légales</p>
-            <a href="contact">Contact</a>
+            <a href="mailto:ohmyfood@gmail.com">Contact</a>
             </div>
         </footer>
     </body>
