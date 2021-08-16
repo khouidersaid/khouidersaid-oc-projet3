@@ -113,7 +113,7 @@ body .bloc-tete .titre {
     text-align: center;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .bloc-tete .titre {
     font-size: x-large;
     font-family: "robotoregular";
@@ -130,7 +130,7 @@ body .bloc-tete .sous-titre {
     font-size: 21px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .bloc-tete .sous-titre {
     font-size: 19px;
   }
@@ -146,7 +146,7 @@ body .bloc-tete .explorer .boutton {
   opacity: 0.8;
   box-shadow: 0 0 4px #99e2d0;
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .bloc-tete .explorer .boutton {
     font-size: 20px;
   }
@@ -181,7 +181,7 @@ body .fonctions {
     margin-top: -11px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .fonctions {
     display: block;
     padding-bottom: 10px;
@@ -206,7 +206,7 @@ body .fonctions .service {
     margin-top: 10px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .fonctions .service {
     width: 93%;
     margin: auto;
@@ -275,7 +275,7 @@ body .resto-father .menu {
     display: block;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .resto-father .menu {
     display: block;
   }
@@ -297,7 +297,7 @@ body .resto-father .menu .restaurant {
     width: 100%;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .resto-father .menu .restaurant {
     width: 100%;
     margin-bottom: 20px;
@@ -319,11 +319,11 @@ body .resto-father .menu .restaurant .nouveau p {
     background-color: #99e2d0;
     position: absolute;
     width: 30%;
-    height: 40px;
+    height: 50px;
     margin: 10px 60%;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .resto-father .menu .restaurant .nouveau {
     width: 30%;
     margin: 10px 60%;
@@ -415,7 +415,7 @@ body .logo-menu p {
     font-family: "shrikhandregular";
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .logo-menu p {
     width: 100%;
     height: 50px;
@@ -441,7 +441,7 @@ body .titre-menu img {
     height: 270px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .titre-menu img {
     height: 650px;
     object-fit: cover;
@@ -458,7 +458,7 @@ body .titre-menu .cuisine-style {
   position: relative;
   margin-top: -40px;
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .titre-menu .cuisine-style {
     margin-top: -35px;
   }
@@ -498,13 +498,31 @@ body .menu-prince {
     display: block;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .menu-prince {
     display: block;
   }
 }
 body .menu-prince .contner {
   width: 100%;
+  animation: moh 0.2s ease-in-out forwards;
+}
+@keyframes moh {
+  0% {
+    height: 0px;
+  }
+  25% {
+    height: 90px;
+  }
+  50% {
+    height: 145px;
+  }
+  75% {
+    height: 200px;
+  }
+  100% {
+    height: 290px;
+  }
 }
 body .menu-prince .contner h2 {
   margin-left: 10px;
@@ -522,12 +540,12 @@ body .menu-prince .contner .menus {
   width: 98%;
   margin-top: 20px;
   font-family: "robotolight";
-  animation: julie 1s ease-in-out forwards;
+  animation: menu 1.5s ease-in-out forwards;
   background-color: #ffffff;
   box-shadow: 0px 0px 6px #808080;
   cursor: pointer;
 }
-@keyframes julie {
+@keyframes menu {
   from {
     height: 0;
   }
@@ -564,7 +582,7 @@ body .menu-prince .contner .menus .plat .prix p {
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: 5px;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 900;
   margin-bottom: 5px;
   padding-left: 5px;
@@ -575,12 +593,12 @@ body .menu-prince .contner .menus .plat .ingridts {
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
-  margin: 0 10px 5px 0;
+  margin: 0 2px 5px 0;
   padding-left: 5px;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .menu-prince .contner .menus .plat .ingridts {
     font-size: 20px;
     font-family: "robotolight";
@@ -608,6 +626,7 @@ body .menu-prince .contner .menus .check I {
 body .commande {
   width: 100%;
   display: flex;
+  margin-top: 30px;
 }
 body .commande .boutton {
   width: 150px;
@@ -651,7 +670,7 @@ body .bloc-fin {
   font-size: 25px;
   font-family: "robotolight";
 }
-@media screen and (min-width: 600px) and (max-width: 1250px) {
+@media screen and (min-width: 600px) and (max-width: 1270px) {
   body .bloc-fin {
     font-size: 25px;
   }

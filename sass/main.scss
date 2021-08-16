@@ -30,7 +30,7 @@
         @media screen and(max-width: 599px) { @content; }
     }
     @else if $point == ipad {
-        @media screen and (min-width: 600px) and (max-width: 1250px){ @content; }
+        @media screen and (min-width: 600px) and (max-width: 1270px){ @content; }
     }
 } 
 $color-primery:#9356dc;
@@ -299,7 +299,7 @@ body{
                     background-color: $color-three;
                     position: absolute;
                     width: 30%;
-                    height: 40px;
+                    height: 50px;
                     @extend .flex;
                     margin: 10px 60%;
                     }
@@ -474,11 +474,20 @@ body{
         }
         .contner{
             width: 100%;
+            animation: moh 0.2s ease-in-out forwards;
+            @keyframes moh {
+               0%{height: 0px;}
+               25% {height:90px;}
+               50% {height:145px;}
+               75% {height:200px;}
+               100% {height:290px;}
+            }
             h2 {
                 margin-left: 10px;
                 border-bottom: solid aqua;
                 width: 60px;
                 font-family: 'robotolight';
+                
             }
             .menus {
                 border-radius: 10px 10px 10px 10px;
@@ -490,11 +499,11 @@ body{
                 width: 98%;
                 margin-top: 20px;
                 font-family: 'robotolight';
-                animation: julie 1s ease-in-out forwards;
+                animation: menu 1.5s ease-in-out forwards;
                 background-color: $color-foor;
                 box-shadow: 0px 0px 6px #808080;
                 cursor: pointer;
-                @keyframes julie {
+                @keyframes menu {
                     from {
                         height: 0;
                     }
@@ -529,7 +538,7 @@ body{
                             text-overflow: ellipsis;
                             overflow: hidden;
                             margin-top: 5px;
-                            font-size: 20px;
+                            font-size: 19px;
                             font-weight: 900;
                             margin-bottom: 5px;
                             padding-left: 5px;
@@ -541,7 +550,7 @@ body{
                         align-items: center;
                         justify-content: space-between;
                         font-size: 18px;
-                        margin: 0 10px 5px 0;
+                        margin: 0 2px 5px 0;
                         padding-left: 5px;
                         text-overflow: ellipsis;
                         overflow: hidden;
@@ -577,6 +586,7 @@ body{
     .commande { 
         width: 100%;
         display: flex;
+        margin-top: 30px;
         .boutton {
             width: 150px;
             height: 50px;
