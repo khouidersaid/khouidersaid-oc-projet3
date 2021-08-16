@@ -16,7 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.flex, body .menu-prince .contner .menus .check, body .rose, body .titre-menu .cuisine-style .coeur3, body .menu .restaurant .identification .coeur .rose, body .menu .restaurant .identification .coeur, body .menu .restaurant .nouveau, body .fonctions .service p, body .fonctions .service i, body .fonctions .service:hover:hover p, body .fonctions .service:hover:hover i, body .bloc-tete .sous-titre, body .bloc-tete .titre, body .gps, body .logo, body .spiner {
+.flex, body .menu-prince .contner .menus .check, body .rose, body .titre-menu .cuisine-style .coeur3, body .resto-father .menu .restaurant .identification .coeur .rose, body .resto-father .menu .restaurant .identification .coeur, body .resto-father .menu .restaurant .nouveau, body .fonctions .service p, body .fonctions .service i, body .bloc-tete .explorer, body .bloc-tete .sous-titre, body .gps, body .logo, body .spiner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,8 +82,11 @@ body .spiner .loader-quart::after {
     transform: rotate(360deg);
   }
 }
+body .logo {
+  padding-top: 20px;
+}
 body .gps {
-  background-color: #696969;
+  background-color: grey;
   height: 40px;
   margin-top: 10px;
 }
@@ -98,35 +101,42 @@ body .gps .localisation p {
   height: 20px;
 }
 body .bloc-tete .titre {
-  width: 100%;
-  font-size: 25px;
+  margin: auto;
+  font-size: x-large;
   font-family: "robotoregular";
+  text-align: center;
 }
 @media screen and (max-width: 599px) {
   body .bloc-tete .titre {
-    width: 90%;
-    margin: auto;
     font-size: x-large;
     font-family: "robotoregular";
+    text-align: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  body .bloc-tete .titre {
+    font-size: x-large;
+    font-family: "robotoregular";
+    text-align: center;
   }
 }
 body .bloc-tete .sous-titre {
-  width: 100%;
-  font-size: 20px;
+  margin: auto;
   font-family: "robotoregular";
+  text-align: center;
 }
 @media screen and (max-width: 599px) {
   body .bloc-tete .sous-titre {
-    width: 90%;
-    margin: auto;
-    font-size: 22px;
-    font-family: "robotoregular";
+    font-size: 21px;
   }
 }
-body .bloc-tete .boutton {
-  width: 20%;
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  body .bloc-tete .sous-titre {
+    font-size: 19px;
+  }
+}
+body .bloc-tete .explorer .boutton {
   height: 50px;
-  margin-left: 40%;
   border-radius: 30px 30px 30px 30px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -134,24 +144,14 @@ body .bloc-tete .boutton {
   color: #f2f2f2;
   background: linear-gradient(175deg, #ff79da 10%, #9356dc 90%);
   opacity: 0.8;
-  opacity: 0.8;
   box-shadow: 0 0 4px #99e2d0;
 }
-@media screen and (max-width: 599px) {
-  body .bloc-tete .boutton {
-    width: 60%;
-    margin-left: 20%;
-    font-size: 15px;
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  body .bloc-tete .explorer .boutton {
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 1200px) {
-  body .bloc-tete .boutton {
-    width: 30%;
-    margin-left: 35%;
-    font-size: 18px;
-  }
-}
-body .bloc-tete .boutton:hover {
+body .bloc-tete .explorer .boutton:hover {
   background-color: #9356dc;
   box-shadow: 0 0 8px #99e2d0;
   opacity: 1;
@@ -181,7 +181,7 @@ body .fonctions {
     margin-top: -11px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   body .fonctions {
     display: block;
     padding-bottom: 10px;
@@ -191,12 +191,13 @@ body .fonctions {
 body .fonctions .service {
   width: 28%;
   height: 70px;
-  font-size: 25px;
+  font-size: 24px;
   border-radius: 10px 10px 10px 10px;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
   margin: auto;
+  font-family: "robotolight";
 }
 @media screen and (max-width: 599px) {
   body .fonctions .service {
@@ -205,33 +206,20 @@ body .fonctions .service {
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   body .fonctions .service {
     width: 93%;
     margin: auto;
     margin-top: 10px;
+    font-size: 27px;
   }
 }
 body .fonctions .service:hover {
-  background-color: #ff79da;
-  opacity: 0.3;
+  background-color: #f2eafb;
   cursor: pointer;
 }
-body .fonctions .service:hover:hover i {
-  width: 30px;
-  height: 30px;
-  color: #778899;
-  margin-right: 5px;
-  margin-left: 5px;
+body .fonctions .service:hover i {
   color: #9356dc;
-  opacity: 1;
-}
-body .fonctions .service:hover:hover p {
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  background-color: #9356dc;
   opacity: 1;
 }
 body .fonctions .service i {
@@ -245,28 +233,34 @@ body .fonctions .service i {
 body .fonctions .service p {
   border-radius: 50%;
   width: 20px;
+  font-size: 15px;
   height: 20px;
   margin-left: -10px;
+  color: #ffffff;
   background-color: #9356dc;
   opacity: 1;
 }
-body .resto {
+body .resto-father {
+  width: 100%;
+  background-color: red;
+}
+body .resto-father .resto {
   padding-left: 2%;
   font-size: 23px;
   font-family: "robotoregular";
 }
-body .resto .h3 {
+body .resto-father .resto .h3 {
   font-family: "robotoregular";
   font-size: 23px;
 }
 @media screen and (max-width: 599px) {
-  body .resto {
+  body .resto-father .resto {
     padding-left: 2%;
     font-size: 23px;
     font-family: "robotoregular";
   }
 }
-body .menu {
+body .resto-father .menu {
   width: 95%;
   height: auto;
   border-radius: 10px 10px 10px 10px;
@@ -277,19 +271,19 @@ body .menu {
   padding: 0;
 }
 @media screen and (max-width: 599px) {
-  body .menu {
+  body .resto-father .menu {
     display: block;
   }
 }
-@media screen and (max-width: 1200px) {
-  body .menu {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  body .resto-father .menu {
     display: block;
   }
 }
-body .menu a {
+body .resto-father .menu a {
   text-decoration: none;
 }
-body .menu .restaurant {
+body .resto-father .menu .restaurant {
   margin-bottom: 40px;
   width: 48%;
   border-radius: 10px 10px 10px 10px;
@@ -299,83 +293,83 @@ body .menu .restaurant {
   object-fit: cover;
 }
 @media screen and (max-width: 599px) {
-  body .menu .restaurant {
+  body .resto-father .menu .restaurant {
     width: 100%;
   }
 }
-@media screen and (max-width: 1200px) {
-  body .menu .restaurant {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  body .resto-father .menu .restaurant {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-body .menu .restaurant .nouveau {
+body .resto-father .menu .restaurant .nouveau {
   color: green;
   background-color: #99e2d0;
   position: absolute;
   width: 15%;
   margin: 10px 30%;
 }
-body .menu .restaurant .nouveau p {
+body .resto-father .menu .restaurant .nouveau p {
   font-size: 25px;
 }
 @media screen and (max-width: 599px) {
-  body .menu .restaurant .nouveau {
+  body .resto-father .menu .restaurant .nouveau {
     color: green;
     background-color: #99e2d0;
     position: absolute;
     width: 30%;
-    height: 30px;
+    height: 40px;
     margin: 10px 60%;
   }
 }
-@media screen and (max-width: 1200px) {
-  body .menu .restaurant .nouveau {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  body .resto-father .menu .restaurant .nouveau {
     width: 30%;
     margin: 10px 60%;
   }
 }
-body .menu .restaurant img {
+body .resto-father .menu .restaurant img {
   border-radius: 10px 10px 0 0;
   width: 100%;
   height: 500px;
   object-fit: cover;
 }
 @media screen and (max-width: 599px) {
-  body .menu .restaurant img {
+  body .resto-father .menu .restaurant img {
     height: 300px;
   }
 }
-body .menu .restaurant .identification {
+body .resto-father .menu .restaurant .identification {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 0 0 10px 10px;
 }
-body .menu .restaurant .identification .nom-resto {
+body .resto-father .menu .restaurant .identification .nom-resto {
   font-size: 20px;
   text-decoration: none;
   width: 70%;
   color: black;
   margin-left: 10px;
 }
-body .menu .restaurant .identification .nom-resto p {
+body .resto-father .menu .restaurant .identification .nom-resto p {
   font-family: "robotolight";
   font-size: larger;
   margin-top: -30px;
 }
-body .menu .restaurant .identification .nom-resto h5 {
+body .resto-father .menu .restaurant .identification .nom-resto h5 {
   font-family: "robotoregular";
   font-size: 22px;
   margin-top: 5px;
 }
-body .menu .restaurant .identification .coeur {
+body .resto-father .menu .restaurant .identification .coeur {
   margin-top: -25px;
   margin-right: 10px;
   height: 30px;
   width: 30px;
 }
-body .menu .restaurant .identification .coeur .rose {
+body .resto-father .menu .restaurant .identification .coeur .rose {
   position: absolute;
   opacity: 0;
   background: linear-gradient(#ff79da, #9356dc);
@@ -385,7 +379,7 @@ body .menu .restaurant .identification .coeur .rose {
   width: 30px;
   height: 30px;
 }
-body .menu .restaurant .identification .coeur .rose:hover {
+body .resto-father .menu .restaurant .identification .coeur .rose:hover {
   opacity: 1;
   transform: scale(1.2);
 }
@@ -421,7 +415,7 @@ body .logo-menu p {
     font-family: "shrikhandregular";
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   body .logo-menu p {
     width: 100%;
     height: 50px;
@@ -438,14 +432,16 @@ body .logo-menu i {
 body .titre-menu img {
   width: 100%;
   object-fit: cover;
+  height: 550px;
 }
 @media screen and (max-width: 599px) {
   body .titre-menu img {
     width: 100%;
     object-fit: cover;
+    height: 270px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   body .titre-menu img {
     height: 650px;
     object-fit: cover;
@@ -462,7 +458,7 @@ body .titre-menu .cuisine-style {
   position: relative;
   margin-top: -40px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   body .titre-menu .cuisine-style {
     margin-top: -35px;
   }
@@ -502,7 +498,7 @@ body .menu-prince {
     display: block;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   body .menu-prince {
     display: block;
   }
@@ -529,6 +525,7 @@ body .menu-prince .contner .menus {
   animation: julie 1s ease-in-out forwards;
   background-color: #ffffff;
   box-shadow: 0px 0px 6px #808080;
+  cursor: pointer;
 }
 @keyframes julie {
   from {
@@ -544,7 +541,7 @@ body .menu-prince .contner .menus:hover {
 }
 body .menu-prince .contner .menus:hover:hover .check {
   transform: scale(90px);
-  width: 90px;
+  width: 85px;
   opacity: 1;
 }
 body .menu-prince .contner .menus:hover:hover .check i {
@@ -561,6 +558,7 @@ body .menu-prince .contner .menus .plat .prix {
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-family: "robotolight";
 }
 body .menu-prince .contner .menus .plat .prix p {
   text-overflow: ellipsis;
@@ -582,6 +580,12 @@ body .menu-prince .contner .menus .plat .ingridts {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  body .menu-prince .contner .menus .plat .ingridts {
+    font-size: 20px;
+    font-family: "robotolight";
+  }
+}
 body .menu-prince .contner .menus .plat .ingridts p {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -598,6 +602,7 @@ body .menu-prince .contner .menus .check {
 body .menu-prince .contner .menus .check I {
   transform: rotate(0);
   transition-duration: 1s;
+  color: #ffffff;
   opacity: 1;
 }
 body .commande {
@@ -643,9 +648,10 @@ body .bloc-fin {
   padding-bottom: 20px;
   margin-top: 20px;
   padding-top: 10px;
+  font-size: 25px;
   font-family: "robotolight";
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   body .bloc-fin {
     font-size: 25px;
   }
