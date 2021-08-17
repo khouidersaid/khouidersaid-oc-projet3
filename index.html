@@ -1,151 +1,154 @@
-<!DOCTYPE --!>
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
+
+<head>
     <title>projet3</title>
     <meta charset="utf-8">
     <link href="./public/css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  rel="stylesheet"> 
-    </head>
-    <body>
-        <div class="spiner">
-            <span class="loader loader-quart"></span>
-       </div>
-        <header>
-            <div class="logo flex">
-                <img src="./images/ohmyfood.png" alt="logo-resto" width="50%">
-            </div>
-            <div class="tete">
-                <div class="gps flex">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="spiner">
+        <span class="loader loader-quart"></span>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="./images/ohmyfood.png" alt="logo-resto">
+        </div>
+        <div class="tete">
+            <div class="gps">
                 <div class="localisation"><i class="fas fa-map-marker-alt"></i></div>
                 <p>Paris, belleville</p>
+            </div>
+            <div class="bloc-tete">
+                <div class="titre">
+                    <h2>Réservez le menu qui vous convient</h2>
                 </div>
-                <div class="bloc-tete">
-                    <div class="titre flex">
-                        <h2>Réservez le menu qui vous convient</h2>
-                    </div>
-                    <div class="sous-titre flex">
-                        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                    </div>
-                    <div class="explorer">
-                        <button class="boutton"> Explorer nos restaurants </button>
-                    </div>
+                <div class="sous-titre">
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                </div>
+                <div class="explorer">
+                    <button class="boutton"> Explorer nos restaurants </button>
                 </div>
             </div>
-        </header>
-        <!--section 1 fonctionnement--> 
-        <section1>
-            <div class="fonc-titre">
-                <h3>Fonctionnement</h3>
+        </div>
+    </header>
+    <!--section 1 fonctionnement-->
+    <section>
+        <div class="fonc-titre">
+            <h3>Fonctionnement</h3>
+        </div>
+        <div class="fonctions">
+            <div class="service">
+                <p>1</p>
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Choisissez un restaurant</h4>
             </div>
-            <div class="fonctions">
-                <div class="service">
-                    <p flex>1</p>
-                    <i class="fas fa-mobile-alt" flex></i>
-                    <h4>Choisissez un restaurant</h4>
-                </div>
-                <div class="service">
-                    <p flex>2</p>
-                    <i class="fas fa-bars"flex></i>
-                    <h4>Composer votre menu</h4>
-                </div>
-                <div class="service">
-                    <p flex>3</p>
-                    <i class="fas fa-house-user"flex></i>
-                    <h4>Dégustez au restaurant</h4>
-                </div>
+            <div class="service">
+                <p>2</p>
+                <i class="fas fa-bars"></i>
+                <h4>Composer votre menu</h4>
             </div>
-        </section1>
-        <!--section 2 Restaurants-->
-        <section2 class="resto-father">
-            <div class="resto">
-                <h3>Restaurants</h3>
+            <div class="service">
+                <p>3</p>
+                <i class="fas fa-house-user"></i>
+                <h4>Dégustez au restaurant</h4>
             </div>
-            <div class="menu">
-                <figure class="restaurant">
-                    <div class="nouveau">
-                        <p>nouveau</p>
-                    </div>
-                    <a href="./palette.html">
-                        <img src="./images/resto1.jpg" alt="plat1">
-                        <figcaption class="identification">
-                            <div class="nom-resto">
-                                <h5>La palette a du gôut</h5>
-                                <p>Ménilmontant</p>
-                            </div>
-                            <div class="coeur">
-                                <div class="rose"><i class="fas fa-heart"></i></div>
-                                <div class="vide"><i class="far fa-heart"></i></div>  
-                            </div>
-                        </figcaption> 
-                    </a>    
-                </figure>
-                <figure class="restaurant">
-                    <div class="nouveau">
+        </div>
+    </section>
+    <!--section 2 Restaurants-->
+    <section class="resto-father">
+        <div class="resto">
+            <h3>Restaurants</h3>
+        </div>
+        <div class="menu">
+            <figure class="restaurant">
+                <div class="nouveau">
                     <p>nouveau</p>
-                    </div>
-                    <a href="./enchantee.html">
-                        <img src="./images/resto3.jpg" alt="plat2">
-                        <figcaption class="identification">
-                            <div class="nom-resto">
-                                <h5>La notte enchantée</h5>
-                                <p>Charonne</p>
-                            </div>
-                            <div class="coeur">
-                                <div class="rose"><i class="fas fa-heart"></i></div>
-                                <div class="vide"><i class="far fa-heart"></i></div>
-                            </div> 
-                        </figcaption>
-                    </a>
-                </figure>
-                <figure class="restaurant">
-                    <a href="./française.html">
-                        <img src="./images/resto4.jpg" alt="plat3">
-                        <figcaption class="identification">
-                            <div class="nom-resto">
-                                <h5>À la française</h5>
-                                <p>Cité rouge</p>
-                            </div>
-                            <div class="coeur">
-                                <div class="rose"><i class="fas fa-heart"></i></div>
-                                <div class="vide"><i class="far fa-heart"></i></div>   
-                            </div>
-                        </figcaption>
-                    </a>
-                </figure>
-                <figure class="restaurant">
-                    <a href="./delice.html">
-                        <img src="./images/resto2.jpg" alt="plat4">
-                        <figcaption class="identification">
-                            <div class="nom-resto">
-                                <h5>La délice des sens</h5>
-                                <p>Folie-Méricourt</p>
-                            </div>                   
-                            <div class="coeur">
-                                <div class="rose"><i class="fas fa-heart"></i></div>
-                                <div class="vide"><i class="far fa-heart"></i></div>   
-                            </div>
-                        </figcaption>
-                    </a>
-                </figure>
+                </div>
+                <a href="./palette.html">
+                    <img src="./images/resto1.jpg" alt="plat1">
+                    <figcaption class="identification">
+                        <div class="nom-resto">
+                            <h5>La palette a du gôut</h5>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="coeur">
+                            <div class="rose"><i class="fas fa-heart"></i></div>
+                            <div class="vide"><i class="far fa-heart"></i></div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="restaurant">
+                <div class="nouveau">
+                    <p>nouveau</p>
+                </div>
+                <a href="./enchantee.html">
+                    <img src="./images/resto3.jpg" alt="plat2">
+                    <figcaption class="identification">
+                        <div class="nom-resto">
+                            <h5>La notte enchantée</h5>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="coeur">
+                            <div class="rose"><i class="fas fa-heart"></i></div>
+                            <div class="vide"><i class="far fa-heart"></i></div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="restaurant">
+                <a href="./française.html">
+                    <img src="./images/resto4.jpg" alt="plat3">
+                    <figcaption class="identification">
+                        <div class="nom-resto">
+                            <h5>À la française</h5>
+                            <p>Cité rouge</p>
+                        </div>
+                        <div class="coeur">
+                            <div class="rose"><i class="fas fa-heart"></i></div>
+                            <div class="vide"><i class="far fa-heart"></i></div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="restaurant">
+                <a href="./delice.html">
+                    <img src="./images/resto2.jpg" alt="plat4">
+                    <figcaption class="identification">
+                        <div class="nom-resto">
+                            <h5>La délice des sens</h5>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="coeur">
+                            <div class="rose"><i class="fas fa-heart"></i></div>
+                            <div class="vide"><i class="far fa-heart"></i></div>
+                        </div>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <div class="bloc-fin">
+            <h6>ohmyfood</h6>
+            <div class="proposition">
+                <i class="fas fa-utensils"></i>
+                <p> Proposer un restaurant</p>
             </div>
-        </section2>
-        <footer>
-            <div class="bloc-fin">
-                <h6>ohmyfood</h6>
-                <div class="proposition">
-                    <i class="fas fa-utensils"></i>
-                   <p> Proposer un restaurant</p>
-                </div>
-                <div class="partner">
-                    <i class="fas fa-hands-helping"></i>
-                     <p>Devenir partenaire</p>
-                </div>
-                <div class="mention">
+            <div class="partner">
+                <i class="fas fa-hands-helping"></i>
+                <p>Devenir partenaire</p>
+            </div>
+            <div class="mention">
                 <p>Mentions légales</p>
-                </div>
-                <a href="mailto:ohmyfood@gmail.com">Contact</a>
             </div>
-        </footer>
-    </body>
+            <a href="mailto:ohmyfood@gmail.com">Contact</a>
+        </div>
+    </footer>
+</body>
+
 </html>
