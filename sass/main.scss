@@ -102,20 +102,40 @@ body {
     .logo {
         @extend .flex;
         padding-top: 20px;
+        height: 150px;
+        @include breakpoints(mobile) {
+            height: 70px;
+        }
+        @include breakpoints(ipad) {
+            height: 100px;
+        }
+        h1 {
+            font-size: 150px;
+            font-family: "shrikhandregular";
+            padding-bottom: 15px;
+            @include breakpoints(mobile) {
+                font-size: 50px;
+            }
+            @include breakpoints(ipad) {
+                font-size: 70px;
+            }
+        }
     }
-    .gps {
-        @extend .flex;
-        background-color: grey;
-        height: 40px;
-        margin-top: 10px;
-        .localisation {
-            margin-right: 20px;
-            p {
-                background-color: #696969;
-                border: none;
-                box-shadow: 0 0 8px #696969;
-                width: 250px;
-                height: 20px;
+    .tete {
+        background-color: #f2f2f2;
+        .gps {
+            @extend .flex;
+            background-color: #e0e0e0;
+            height: 40px;
+            .localisation {
+                margin-right: 20px;
+                p {
+                    background-color: #696969;
+                    border: none;
+                    box-shadow: 0 0 8px #696969;
+                    width: 250px;
+                    height: 20px;
+                }
             }
         }
     }
@@ -209,9 +229,10 @@ body {
             margin: auto;
             font-family: "robotolight";
             @include breakpoints(mobile) {
-                width: 90%;
+                width: 99%;
                 margin: auto;
                 margin-top: 10px;
+                margin-left: 2%;
             }
             @include breakpoints(ipad) {
                 width: 93%;
@@ -249,129 +270,135 @@ body {
             }
         }
     }
-
-    .resto {
-        padding-left: 2%;
-        font-size: 23px;
-        font-family: "robotoregular";
-        .h3 {
-            font-family: "robotoregular";
-            font-size: 23px;
-        }
-        @include breakpoints(mobile) {
+    .resto-father {
+        background-color: #eeeeee;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+        .resto {
             padding-left: 2%;
             font-size: 23px;
             font-family: "robotoregular";
-        }
-    }
-    .menu {
-        width: 95%;
-        height: auto;
-        border-radius: 10px 10px 10px 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: auto;
-        padding: 0;
-        @include breakpoints(mobile) {
-            display: block;
-        }
-        @include breakpoints(ipad) {
-            display: block;
-        }
-        a {
-            text-decoration: none;
-        }
-        .restaurant {
-            margin-bottom: 40px;
-            width: 48%;
-            border-radius: 10px 10px 10px 10px;
-            margin: 20px 0 20px 0;
-            box-shadow: 0px 0px 8px #808080;
-            cursor: pointer;
-            object-fit: cover;
+            .h3 {
+                font-family: "robotoregular";
+                font-size: 23px;
+            }
             @include breakpoints(mobile) {
-                width: 100%;
+                padding-left: 2%;
+                font-size: 23px;
+                font-family: "robotoregular";
+            }
+        }
+        .menu {
+            width: 95%;
+            height: auto;
+            border-radius: 10px 10px 10px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto;
+            padding: 0;
+            @include breakpoints(mobile) {
+                display: block;
             }
             @include breakpoints(ipad) {
-                width: 100%;
-                margin-bottom: 20px;
+                display: block;
             }
-            .nouveau {
-                color: green;
-                background-color: $color-three;
-                position: absolute;
-                width: 15%;
-                margin: 10px 30%;
-                @extend .flex;
-                p {
-                    font-size: 25px;
-                }
+            a {
+                text-decoration: none;
+            }
+            .restaurant {
+                margin-bottom: 40px;
+                width: 48%;
+                border-radius: 10px 10px 10px 10px;
+                margin: 20px 0 20px 0;
+                box-shadow: 0px 0px 8px #808080;
+                cursor: pointer;
+                object-fit: cover;
                 @include breakpoints(mobile) {
+                    width: 100%;
+                }
+                @include breakpoints(ipad) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .nouveau {
                     color: green;
                     background-color: $color-three;
                     position: absolute;
-                    width: 30%;
-                    height: 50px;
+                    width: 15%;
+                    margin: 10px 30%;
                     @extend .flex;
-                    margin: 10px 60%;
-                }
-                @include breakpoints(ipad) {
-                    width: 30%;
-                    margin: 10px 60%;
-                }
-            }
-            img {
-                border-radius: 10px 10px 0 0;
-                width: 100%;
-                height: 500px;
-                object-fit: cover;
-                @include breakpoints(mobile) {
-                    height: 300px;
-                }
-            }
-            .identification {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-radius: 0 0 10px 10px;
-                .nom-resto {
-                    font-size: 20px;
-                    text-decoration: none;
-                    width: 70%;
-                    color: black;
-                    margin-left: 10px;
                     p {
-                        font-family: "robotolight";
-                        font-size: larger;
-                        margin-top: -30px;
+                        font-size: 25px;
                     }
-                    h5 {
-                        font-family: "robotoregular";
-                        font-size: 22px;
-                        margin-top: 5px;
+                    @include breakpoints(mobile) {
+                        color: green;
+                        background-color: $color-three;
+                        position: absolute;
+                        width: 30%;
+                        height: 50px;
+                        @extend .flex;
+                        margin: 10px 60%;
+                    }
+                    @include breakpoints(ipad) {
+                        width: 30%;
+                        margin: 10px 60%;
                     }
                 }
-                .coeur {
-                    margin-top: -25px;
-                    margin-right: 10px;
-                    height: 30px;
-                    width: 30px;
-                    @extend .flex;
-                    .rose {
-                        position: absolute;
-                        opacity: 0;
-                        background: linear-gradient(#ff79da, $color-primery);
-                        -webkit-background-clip: text;
-                        color: transparent;
-                        transition-duration: 1.2s;
-                        width: 30px;
-                        height: 30px;
-                        @extend .flex;
+                img {
+                    border-radius: 10px 10px 0 0;
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                    @include breakpoints(mobile) {
+                        height: 300px;
                     }
-                    .rose:hover {
-                        opacity: 1;
-                        transform: scale(1.2);
+                }
+                .identification {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 0 0 10px 10px;
+                    background-color: #ffffff;
+                    margin-top: -3px;
+                    .nom-resto {
+                        font-size: 20px;
+                        text-decoration: none;
+                        width: 70%;
+                        color: black;
+                        margin-left: 10px;
+                        p {
+                            font-family: "robotolight";
+                            font-size: larger;
+                            margin-top: -30px;
+                        }
+                        h5 {
+                            font-family: "robotoregular";
+                            font-size: 22px;
+                            margin-top: 5px;
+                        }
+                    }
+                    .coeur {
+                        margin-top: -25px;
+                        margin-right: 10px;
+                        height: 30px;
+                        width: 30px;
+                        @extend .flex;
+                        .rose {
+                            position: absolute;
+                            opacity: 0;
+                            background: linear-gradient(#ff79da, $color-primery);
+                            -webkit-background-clip: text;
+                            color: transparent;
+                            transition-duration: 1.2s;
+                            width: 30px;
+                            height: 30px;
+                            @extend .flex;
+                        }
+                        .rose:hover {
+                            opacity: 1;
+                            transform: scale(1.2);
+                        }
                     }
                 }
             }
@@ -390,18 +417,14 @@ body {
         p {
             width: 100%;
             height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @extend .flex;
             font-size: 100px;
             font-family: "shrikhandregular";
             @include breakpoints(mobile) {
                 width: 100%;
                 height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: xx-large;
+                @extend .flex;
+                font-size: 40px;
                 font-family: "shrikhandregular";
             }
             @include breakpoints(ipad) {
@@ -410,7 +433,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: xxx-large;
+                font-size: 80px;
                 font-family: "shrikhandregular";
             }
         }
@@ -534,10 +557,8 @@ body {
                     }
                 }
                 &:hover {
-                    transform: scale(90px);
                     opacity: 1;
                     &:hover .check {
-                        transform: scale(90px);
                         width: 85px;
                         opacity: 1;
                         i {
@@ -564,6 +585,9 @@ body {
                             font-weight: 900;
                             margin-bottom: 5px;
                             padding-left: 5px;
+                            @include breakpoints(ipad) {
+                                font-size: 25px;
+                            }
                         }
                     }
                     .ingridts {
@@ -571,13 +595,13 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        font-size: 18px;
+                        font-size: 17px;
                         margin: 0 2px 5px 0;
                         padding-left: 5px;
                         text-overflow: ellipsis;
                         overflow: hidden;
                         @include breakpoints(ipad) {
-                            font-size: 20px;
+                            font-size: 25px;
                             font-family: "robotolight";
                         }
                         p {
@@ -614,6 +638,7 @@ body {
             height: 50px;
             margin: auto;
             margin-top: 20px;
+            margin-bottom: 10px;
             border-radius: 30px 30px 30px 30px;
             cursor: pointer;
             border: none;
@@ -638,6 +663,11 @@ body {
                 opacity: 0.8;
                 box-shadow: 0 0 4px #808080;
             }
+            @include breakpoints(ipad) {
+                width: 200px;
+                height: 60px;
+                font-size: 18px;
+            }
         }
     }
     .bloc-fin {
@@ -645,20 +675,18 @@ body {
         color: $color-foor;
         background-color: #000000;
         padding-bottom: 20px;
-        margin-top: 20px;
         padding-top: 10px;
-        font-size: 25px;
+        font-size: 20px;
         font-family: "robotolight";
         @include breakpoints(ipad) {
             font-size: 25px;
         }
-        h6,
-        h4 {
+        h6, h4 {
             width: 80%;
             padding-left: 5px;
             color: #ffffff;
             margin-bottom: 10px;
-            font-size: 25px;
+            font-size: 20px;
             font-family: "shrikhandregular";
         }
         .proposition {
